@@ -18,7 +18,7 @@ class OffersController < ApplicationController
     @offer = Offer.find(params[:id])
     render json: helpers
       .c("#{controller_name}_offer-form",
-        { offer: @offer, id: "edit_offer#{@offer.id}", m: 'PATCH', tclass: 'js-form-edit' })
+         offer: @offer, id: "edit_offer#{@offer.id}", m: 'PATCH', tclass: 'js-form-edit')
   end
 
   def update
