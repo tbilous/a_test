@@ -7,5 +7,4 @@ test:
 
 production:
   adapter: redis
-  url: redis://localhost:6379/1
-  channel_prefix: a_test_production
+  url:  redis://redistogo:8b3d8025f6a905ac0ac6837caf0bf1bc@porgy.redistogo.com:10605

@@ -22,7 +22,6 @@
 
 .byebug_history
 # Ignore all logfiles and tempfiles.
-/config/database.yml
 /vendor/
 /bundler_stubs/
 /.idea
@@ -32,17 +31,7 @@
 .rake_tasks~
 /public/uploads/
 /.ruby-gemset
-/config/development.sphinx.conf
-/db/sphinx/
-config/test.sphinx.conf
 temp
-/config/provision/keys/id_rsa
-/config/provision/keys/id_rsa.pub
-/config/provision/configs/settings.yml
 /public/packs
 /config/secrets.yml
-/db/GeoIP.dat
-/db/GeoLiteCity.dat
-/config/old_database_geo.yml
 /public/system/
-/config/database_geo.yml
