@@ -1,0 +1,6 @@
+h1.text-center Manage offers
+h3 Add offer:
+.list-group-item
+  = c("#{controller_name}_offer-form", { offer: Offer.new, id: 'new_offer', m: 'POST', tclass: 'js-form-new'} )
+#offers
+  = render @offers

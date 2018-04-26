@@ -1,0 +1,11 @@
+= form_for offer, method: m, html: { role: 'form', class: "#{tclass}", id: id},
+  data: { remote: true, type: :json } do |f|
+  .form-row
+    .col-3
+      = f.text_field :name, class: 'form-control', required: true, placeholder: 'Name'
+    .col-3
+      = f.text_field :advertiser, class: 'form-control', required: true, placeholder: 'Advertiser'
+    .col-2
+      = f.text_field :payout, class: 'form-control', required: true, placeholder: 'Payout'
+    .col-1
+      = f.button 'submit', class: 'btn btn-primary js-message-create-submit'

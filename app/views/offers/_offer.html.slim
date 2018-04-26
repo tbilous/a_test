@@ -1,0 +1,12 @@
+.list-group-item.js-offers--content id="offerId#{offer.id}"
+  .row
+    .col-3
+      = offer.name
+    .col-3
+      = offer.advertiser
+    .col-2
+      = offer.payout
+    .col-1
+      = link_to 'edit', edit_offer_path(offer), method: 'get',
+        data: {remote: true, type: :json, target: "#offerId#{offer.id}"},
+        class: 'btn btn-warning js-offer-common-edit'
