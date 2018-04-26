@@ -33,5 +33,4 @@
 /.ruby-gemset
 temp
 /public/packs
-/config/secrets.yml
 /public/system/
