@@ -43,12 +43,7 @@ module News
     config.assets.paths << 'app/assets/templates'
     config.action_cable.disable_request_forgery_protection = true
     config.time_zone = 'Amsterdam'
-    config.active_record.default_timezone = :local
-
-    # i18 config
-    config.i18n.available_locales = [:en]
-    config.i18n.default_locale = :en
-    config.i18n.fallbacks = true
+    config.active_record.default_timezone = :loca
 
     # config.active_job.queue_adapter = :sidekiq
     # Don't generate system test files.

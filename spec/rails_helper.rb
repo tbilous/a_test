@@ -7,7 +7,6 @@ require 'rspec/rails'
 # ActiveRecord::Migration.maintain_test_schema!
 # ActiveJob::Base.queue_adapter = :test
 RSpec.configure do |config|
-  # config.include Devise::Test::ControllerHelpers, type: :controller
   config.extend ControllerMacros, type: :controller
   %i[controller view request].each do |type|
     config.include ::Rails::Controller::Testing::TestProcess, type: type

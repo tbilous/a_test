@@ -10,11 +10,9 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require rails-ujs
 //= require jquery3
-//= require bootstrap-sprockets
-//= require handlebars
-//= require 'moment'
-//= require i18n
-//= require i18n/translations
+//= require rails-ujs
+//= require bootstrap
+//= require popper
+//= require handlebars.runtime
 //= require_tree ./shared
