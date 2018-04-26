@@ -1,4 +1,4 @@
-shared_examples 'invalid params' do |message, model: nil, code: 422|
+shared_examples 'invalid params' do |message, model: nil, code: 403|
   context message do
     if model
       it "doesn't create #{model}" do

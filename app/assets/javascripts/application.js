@@ -15,4 +15,7 @@
 //= require bootstrap
 //= require popper
 //= require handlebars.runtime
+//= require cable
 //= require_tree ./shared
+//= require_tree ./vendor
+//= require offers

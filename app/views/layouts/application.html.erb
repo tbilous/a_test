@@ -1,24 +1,21 @@
 <!DOCTYPE html>
-<html lang=<%= I18n.locale %>>
+<html>
   <head>
     <title>News</title>
     <%= csrf_meta_tags %>
-    <%= Gon::Base.render_data %>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <%= stylesheet_link_tag    'application', media: 'all' %>
-    <%= javascript_include_tag 'application' %>
+    <%= stylesheet_link_tag  'application', media: 'all' %>
   </head>
 
-  <body class="body">
-    <%= render 'layouts/shared/js_locales_info' %>
+  <body class="body js-disable-events">
     <div class="container main">
       <%= yield %>
     </div>
-    <%= render 'layouts/shared/footer' %>
     <%= debug(params) if Rails.env.development? %>
+    <%= javascript_include_tag 'application' %>
   </body>
 </html>

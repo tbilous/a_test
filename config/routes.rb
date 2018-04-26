@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  # resources :home, only: :index
-  # root 'home#index'
+  resources :offers, only: %i(index create update edit)
+  root 'offers#index'
 end
